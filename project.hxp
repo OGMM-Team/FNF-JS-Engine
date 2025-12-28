@@ -64,7 +64,7 @@ class Project extends HXProject
 	/**
 	 * A package name used for identifying the app on various app stores.
 	 */
-	static final PACKAGE_NAME:String = "com.JordanSantiago.JSEngine";
+	static final PACKAGE_NAME:String = "com.OGMM.JSEngine";
 
 	/**
 	 * The fully qualified class path for the entry point class to execute when launching the game.
@@ -76,7 +76,7 @@ class Project extends HXProject
 	 * The company name for the game.
 	 * This appears in metadata in places I think.
 	 */
-	static final COMPANY:String = "JordanSantiago";
+	static final COMPANY:String = "OGMM";
 
 	/**
    * Path to the Haxe script run before building the game.
@@ -522,7 +522,7 @@ class Project extends HXProject
 		// addAsset("art/readme.txt", "do NOT readme.txt", "art", shouldEmbedArt);
 		// addAsset("CHANGELOG.md", "changelog.txt", "/", shouldEmbedArt);
 		addAssetPath("example_mods", "mods", "default", ["*"], exclude, shouldEmbed); // lololololoolollo
-		
+
 		if (isLinux() && !isDebug())
 			addAsset("gamemode.ini");
 	}
@@ -616,7 +616,7 @@ class Project extends HXProject
 	{
 		return this.targetFlags.exists("nodejs");
 	}
-	
+
 	inline function isCPP():Bool
 	{
 		return this.targetFlags.exists("cpp");

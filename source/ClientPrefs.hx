@@ -67,7 +67,7 @@ class ClientPrefs { //default settings if it can't find a save file containing y
 	public static var botTxtFade:Bool = true;
 	public static var pauseMusic:String = 'Tea Time';
 	public static var daMenuMusic:String = 'Default';
-	public static var checkForUpdates:Bool = true;
+	public static var checkForUpdates:Bool = false;
 	public static var comboStacking = true;
 	public static var showRamUsage:Bool = true;
 	public static var showMaxRamUsage:Bool = true;
@@ -75,6 +75,7 @@ class ClientPrefs { //default settings if it can't find a save file containing y
 	public static var tipTexts:Bool = true;
 	public static var discordRPC:Bool = true;
 	public static var peOGCrash:Bool = false;
+	public static var fpsBorder:Bool = false;
 
 	//Graphics
 	public static var lowQuality:Bool = false;
@@ -373,3 +374,4 @@ class ClientPrefs { //default settings if it can't find a save file containing y
 		return copiedArray;
 	}
 }
+
