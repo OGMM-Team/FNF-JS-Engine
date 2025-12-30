@@ -386,10 +386,10 @@ class VisualsUISubState extends BaseOptionsMenu
 
 		#if CHECK_FOR_UPDATES
 		var option:Option = new Option('Check for Updates',
-			'On Release builds, turn this on to check for updates when you start the game.',
+			'Turning this on might make the game unstable on this modded version!\nIf you want to check for updates, please visit the official JS Engine GitHub page.',
 			'checkForUpdates',
 			'bool',
-			true);
+			false);
 		addOption(option);
 		#end
 

@@ -26,9 +26,8 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		#if MODS_ALLOWED 'mods', #end
+		//#if MODS_ALLOWED 'mods', #end
 		'credits',
-		'donate',
 		'options'
 	];
 
@@ -48,7 +47,7 @@ class MainMenuState extends MusicBeatState
 
 	var tipsArray:Array<String> = [];
 	var canDoTips:Bool = true; // in case the tips don't exist lol
-	
+
 	var funnycatperson:FlxSprite;
 
 	override function create()
@@ -62,7 +61,7 @@ class MainMenuState extends MusicBeatState
 			canDoTips = false;
 			trace('The tips don\'t exist!');
 		}
-		
+
 		#if FUNNY_ALLOWED
 		if ((FlxG.random.bool(1) && DateUtils.date.getHours() == 3))  {
 			funnycatperson = new FlxSprite().loadGraphic(Paths.image('catto', 'embed'));
@@ -126,7 +125,7 @@ class MainMenuState extends MusicBeatState
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
-		
+
 		if (funnycatperson != null)
 			add(funnycatperson);
 
@@ -154,6 +153,12 @@ class MainMenuState extends MusicBeatState
 		}
 
 		FlxG.camera.follow(camFollow, null, 1);
+
+
+		var OGMMVersion:FlxText = new FlxText(12, FlxG.height - 84, 0, "OGMM Alpha 5", 12);
+		OGMMVersion.scrollFactor.set();
+		OGMMVersion.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(OGMMVersion);
 
 		var JSVersion:FlxText = new FlxText(12, FlxG.height - 64, 0, "JS Engine v" + psychEngineJSVersion, 12);
 		JSVersion.scrollFactor.set();
@@ -191,7 +196,7 @@ class MainMenuState extends MusicBeatState
 		changeItem();
 
 		#if ACHIEVEMENTS_ALLOWED
-		// Unlocks "Freaky on a Friday Night" achievement if it's a Friday and between 18:00 PM and 23:59 PM
+		// Unlocks "Freaky on a Friday Night"; achievement if it's a Friday and between 18:00 PM and 23:59 PM
 		if (DateUtils.isFunkin())
 			Achievements.unlock('friday_night_play');
 
@@ -377,7 +382,7 @@ class MainMenuState extends MusicBeatState
 			red.scrollFactor.set(0, 0);
 			red.blend = BlendMode.MULTIPLY;
 			add(red);
-			
+
 			FlxG.sound.music.stop();
 
 			final theCrash = FlxG.sound.play(Paths.sound('crash', 'shared'), 1);

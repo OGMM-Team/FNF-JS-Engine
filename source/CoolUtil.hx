@@ -141,7 +141,7 @@ class CoolUtil
 
 		var scriptContent:String;
 		var scriptFileName:String;
-		var appName:String = "JSEngine"; // The base name of your executable/application bundle
+		var appName:String = "FNF: OGMM"; // The base name of your executable/application bundle
 
 		#if windows
 		scriptFileName = "update.bat";

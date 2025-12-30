@@ -16,9 +16,9 @@ class ClientPrefs { //default settings if it can't find a save file containing y
 	public static var noMarvJudge:Bool = false;
 	public static var noReset:Bool = false;
 	public static var antiCheatEnable:Bool = false;
-	public static var ezSpam:Bool = false;
+	public static var ezSpam:Bool = true;
 	public static var spaceVPose:Bool = true;
-	public static var ghostTapAnim:Bool = true;
+	public static var ghostTapAnim:Bool = false;
 	public static var hitsoundVolume:Float = 0;
 	public static var hitsoundType:String = 'osu!mania';
 	public static var voiidTrollMode:Bool = false;
@@ -47,15 +47,15 @@ class ClientPrefs { //default settings if it can't find a save file containing y
 	public static var rateNameStuff:String = 'Quotes';
 	public static var timeBarType:String = 'Time Left';
 	public static var scoreStyle:String = 'Psych Engine';
-	public static var timeBarStyle:String = 'Vanilla';
+	public static var timeBarStyle:String = 'JS Engine';
 	public static var healthBarStyle:String = 'Vanilla';
-	public static var watermarkStyle:String = 'Vanilla';
-	public static var botTxtStyle:String = 'Vanilla';
+	public static var watermarkStyle:String = 'Hide';
+	public static var botTxtStyle:String = 'Hide';
 	public static var strumLitStyle:String = 'Full Anim';
 	public static var bfIconStyle:String = 'Default';
 	public static var ratingType:String = 'Default';
 	public static var simplePopups:Bool = false;
-	public static var iconBounceType:String = 'New Psych';
+	public static var iconBounceType:String = 'Strident Crisis';
 	public static var smoothHealth:Bool = true;
 	public static var smoothHPBug:Bool = false;
 	public static var flashing:Bool = true;
@@ -100,7 +100,7 @@ class ClientPrefs { //default settings if it can't find a save file containing y
 	public static var noHitFuncs:Bool = false;
 	public static var noSkipFuncs:Bool = false;
 	public static var lessBotLag:Bool = false;
-	public static var maxNotes:Int = 0;
+	public static var maxNotes:Int = 500;
 
 	//Secret Debug
 	public static var noGunsRNG:Bool = false;
@@ -167,8 +167,8 @@ class ClientPrefs { //default settings if it can't find a save file containing y
 	//Misc
 	public static var JSEngineRecharts:Bool = false;
 	public static var alwaysTriggerCutscene:Bool = false;
-	public static var disableSplash:Bool = false;
-	public static var disableAprilFools:Bool = false;
+	public static var disableSplash:Bool = true;
+	public static var disableAprilFools:Bool = true;
 	public static var rainbowTime:Float = 5.0;
 	public static var autosaveCharts:Bool = true;
 
