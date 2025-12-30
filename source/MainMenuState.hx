@@ -15,6 +15,7 @@ class MainMenuState extends MusicBeatState
 {
 	public static final gitCommit:String = HaxeCommit.getGitCommitHash();
 
+	public static var psychEngineOGMMVersion:String = '0.0.1 (ALPHA)'; //This is also used for Discord RPC (MAYBE?)
 	public static var psychEngineJSVersion:String = '1.49.1'; //This is also used for Discord RPC
 	public static var psychEngineVersion:String = '0.6.3'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
@@ -155,7 +156,7 @@ class MainMenuState extends MusicBeatState
 		FlxG.camera.follow(camFollow, null, 1);
 
 
-		var OGMMVersion:FlxText = new FlxText(12, FlxG.height - 84, 0, "OGMM Alpha 5", 12);
+		var OGMMVersion:FlxText = new FlxText(12, FlxG.height - 84, 0, "OGMM v" + psychEngineOGMMVersion, 12);
 		OGMMVersion.scrollFactor.set();
 		OGMMVersion.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(OGMMVersion);
