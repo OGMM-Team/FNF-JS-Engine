@@ -19,7 +19,8 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 	function getOptions()
 	{
-		var skip:Bool = inThePauseMenu;
+		// Commented out unused variable skip
+		// var skip:Bool = inThePauseMenu;
 
 		var goption:GameplayOption = new GameplayOption('Scroll Type', 'scrolltype', 'string', 'multiplicative', ["multiplicative", "constant"]);
 		optionsArray.push(goption);
@@ -45,10 +46,10 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		#if !html5
 		var option:GameplayOption = new GameplayOption('Playback Rate', 'songspeed', 'float', 1);
 		option.scrollSpeed = 3;
-		option.minValue = 0.01;
+		option.minValue = 0.05;
 		option.maxValue = 100;
 		option.changeValue = 0.05;
-		option.slowChangeVal = 0.01;
+		option.slowChangeVal = 0.05;
 		option.displayFormat = '%vX';
 		option.decimals = 2;
 		optionsArray.push(option);
@@ -59,7 +60,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		option.minValue = -1;
 		option.maxValue = 50;
 		option.changeValue = 0.1;
-		option.slowChangeVal = 0.01;
+		option.slowChangeVal = 0.1;
 		option.decimals = 3;
 		option.displayFormat = '%vX';
 		optionsArray.push(option);
@@ -69,7 +70,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		option.minValue = -1;
 		option.maxValue = 50;
 		option.changeValue = 0.1;
-		option.slowChangeVal = 0.01;
+		option.slowChangeVal = 0.1;
 		option.decimals = 3;
 		option.displayFormat = '%vX';
 		optionsArray.push(option);
@@ -104,9 +105,11 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		option.minValue = -1;
 		option.maxValue = 10;
 		option.changeValue = 0.1;
-		option.slowChangeVal = 0.01;
+		option.slowChangeVal = 0.1;
 		option.displayFormat = '%vX';
 		optionsArray.push(option);
+
+		/* Disabled Becuase its not needed for my mod
 
 		var option:GameplayOption = new GameplayOption('Random Mode', 'randommode', 'bool', false);
 		option.onChange = onChangeChartOption;
@@ -138,6 +141,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		option.displayFormat = '%v';
 		optionsArray.push(option);
 
+
 		var option:GameplayOption = new GameplayOption('Random Playback Rate', 'randomspeed', 'bool', false);
 		option.onChange = onChangeChartOption;
 		optionsArray.push(option);
@@ -157,15 +161,18 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		option.minValue = 1;
 		option.maxValue = 10;
 		option.changeValue = 0.05;
-		option.slowChangeVal = 0.01;
+		option.slowChangeVal = 0.05;
 		option.displayFormat = '%v';
 		option.decimals = 2;
 		optionsArray.push(option);
+
 
 		var option:GameplayOption = new GameplayOption('Troll Mode', 'thetrollingever', 'bool', false);
 		option.onChange = onChangeChartOption;
 		optionsArray.push(option);
 	}
+		*/
+
 
 	public function getOptionByName(name:String)
 	{
