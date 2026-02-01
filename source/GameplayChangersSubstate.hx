@@ -19,8 +19,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 	function getOptions()
 	{
-		// Commented out unused variable skip
-		// var skip:Bool = inThePauseMenu;
+		 var skip:Bool = inThePauseMenu;
 
 		var goption:GameplayOption = new GameplayOption('Scroll Type', 'scrolltype', 'string', 'multiplicative', ["multiplicative", "constant"]);
 		optionsArray.push(goption);
