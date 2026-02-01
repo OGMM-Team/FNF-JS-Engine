@@ -19,6 +19,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 	function getOptions()
 	{
+
 		 var skip:Bool = inThePauseMenu;
 
 		var goption:GameplayOption = new GameplayOption('Scroll Type', 'scrolltype', 'string', 'multiplicative', ["multiplicative", "constant"]);
@@ -169,9 +170,9 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		var option:GameplayOption = new GameplayOption('Troll Mode', 'thetrollingever', 'bool', false);
 		option.onChange = onChangeChartOption;
 		optionsArray.push(option);
+			}
+			*/
 	}
-		*/
-
 
 	public function getOptionByName(name:String)
 	{
