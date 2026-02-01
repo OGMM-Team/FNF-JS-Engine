@@ -68,6 +68,8 @@ class TitleState extends MusicBeatState
     swagShader = new ColorSwap();
     super.create();
 
+
+/*
     #if (CHECK_FOR_UPDATES)
     if (ClientPrefs.checkForUpdates && !closedState && !Main.askedToUpdate)
     {
@@ -108,6 +110,8 @@ class TitleState extends MusicBeatState
       http.request();
     }
     #end
+*/
+
 
     Highscore.load();
 
