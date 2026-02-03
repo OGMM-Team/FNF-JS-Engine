@@ -383,7 +383,7 @@ class VisualsUISubState extends BaseOptionsMenu
 			addOption(option);
 			option.onChange = onChangeMenuMusic;
 		}
-
+/*
 		#if CHECK_FOR_UPDATES
 		var option:Option = new Option('Check for Updates',
 			'Turning this on might make the game unstable on this modded version!\nIf you want to check for updates, please visit the official JS Engine GitHub page.',
@@ -392,7 +392,7 @@ class VisualsUISubState extends BaseOptionsMenu
 			false);
 		addOption(option);
 		#end
-
+*/
 		var option:Option = new Option('Combo Stacking',
 			"If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read",
 			'comboStacking',

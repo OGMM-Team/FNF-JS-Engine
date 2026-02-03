@@ -63,7 +63,7 @@ class OptimizationSubState extends BaseOptionsMenu
 			'bool',
 			false);
 		addOption(option);
-
+/*
 		var option:Option = new Option('Disable onSpawnNote Lua Calls',
 			"If checked, the game will not call onSpawnNote when a note is spawned.\nIf you have a script that uses that, maybe leave it on.",
 			'noSpawnFunc',
@@ -84,7 +84,7 @@ class OptimizationSubState extends BaseOptionsMenu
 			'bool',
 			false);
 		addOption(option);
-
+*/
 		var option:Option = new Option('Even LESS Botplay Lag',
 			"Reduce Botplay lag even further.",
 			'lessBotLag',

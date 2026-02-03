@@ -11,14 +11,14 @@ class MiscSettingsSubState extends BaseOptionsMenu
 	{
 		title = 'Misc';
 		rpcTitle = 'Miscellaneous Settings Menu'; //for Discord Rich Presence
-
+/*
 		var option:Option = new Option('Use JS Engine Recharts', //Name
 			'If checked, songs will have an optional "JSHard" difficulty (if available.)\nUse this difficulty for the JSE-specific recharts.', //Description
 			'JSEngineRecharts', //Save data variable name
 			'bool', //Variable type
 			false); //Default value
 		addOption(option);
-
+*/
 		var option:Option = new Option('Always Play Cutscenes', //Name
 			'If checked, cutscenes will always play even if you\nenter the song through Freeplay.', //Description
 			'alwaysTriggerCutscene', //Save data variable name
@@ -30,7 +30,7 @@ class MiscSettingsSubState extends BaseOptionsMenu
 			'If checked, the splash screen gets disabled on startup.', //Description
 			'disableSplash', //Save data variable name
 			'bool', //Variable type
-			false); //Default value
+			true); //Default value
 		addOption(option);
 
 		//credit to Nael2xd for the idea

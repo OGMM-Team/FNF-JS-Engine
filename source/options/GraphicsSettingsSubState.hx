@@ -65,6 +65,8 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 
 		// The "Memory Leaks" meme is dead...
 
+		// i mean it is still funny tho
+
 		#if !html5
 		#if desktop
 		//different res cant really be done on browser lol
