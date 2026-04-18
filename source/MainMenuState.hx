@@ -7,15 +7,15 @@ import flixel.effects.FlxFlicker;
 import flixel.input.keyboard.FlxKey;
 import lime.app.Application;
 #if FUNNY_ALLOWED
-import openfl.display.BlendMode;
 import flixel.addons.plugin.screengrab.FlxScreenGrab;
+import openfl.display.BlendMode;
 #end
 
 class MainMenuState extends MusicBeatState
 {
 	public static final gitCommit:String = HaxeCommit.getGitCommitHash();
 
-	public static var psychEngineOGMMVersion:String = '0.0.1 (ALPHA)'; //This is also used for Discord RPC (MAYBE?)
+	public static var psychEngineOGMMVersion:String = '0.0.1 (Demo)'; //This is also used for Discord RPC (MAYBE?)
 	public static var psychEngineJSVersion:String = '1.49.1'; //This is also used for Discord RPC
 	public static var psychEngineVersion:String = '0.6.3'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
